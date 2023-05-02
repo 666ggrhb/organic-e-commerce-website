@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body{
+    background-color: rgb(220,220,220);
+}
+.win{
+    width: 500px;
+    height: 730px;
+    background-color: #fff;
+    border: 2px gray solid;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0px 0px 15px 5px gray;
+}
+#close{
+    width: 40px;
+    height: 40px;
+    float: right;
+    background-image: url("https://i.postimg.cc/9f96tYpy/cross-noun-002-09265-removebg-preview.png");
+    background-size: contain;
+}
+#close:hover{
+    cursor: pointer;
+}
+#pic{
+    width: 80px;
+    height: 80px;
+    background-image: url("https://i.postimg.cc/HnkvKwQZ/user.png");
+    background-size: contain;
+    margin: auto;
+    margin-top: 30px;
+}
+.btn{
+    width: 100px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    border-bottom: 2px black solid;
+    transition: ease all .5s;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn:hover{
+    background-color: brown;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+{
+    width: 90%;
+    line-height: 30px;
+    font-size: 15px;
+    outline: none;
+    border: 0px;
+    border-bottom: 2px purple solid;
+    margin-left: 10px;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 81);
+    margin-left: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+input[type="text"]:focus{
+    background-color: thistle;
+}
+input[type="password"]:focus{
+    background-color: thistle;
+}
+input[type="email"]:focus{
+    background-color: thistle;
+}
+input[type="number"]:focus{
+    background-color: thistle;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: brown;
+}
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div class="win">
+        <div id="close"></div>
+        <div id="pic"></div>
+        <form>
+            <table width="90%">
+                <tr height="35">
+                    <td>
+                        <label>Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>
+                        <label>Password</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" id="pwd">
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>
+                        <label>Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" id="email">
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>
+                        <label>Pancard</label>
+                    </td>
+                </tr>
+                
+                    <td>
+                        <label>Adhaar Card</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="adhar">
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>
+                        <label>Contact Number</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="contact">
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>
+                        <label>Address</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="add">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="btn">SignUp</div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
